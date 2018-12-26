@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>{{ site.title }}</title>
-  <link href="/assets/styles.css" rel="stylesheet" />
+  <link href="{{ site.baseurl }}/assets/styles.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -22,7 +22,7 @@
     </ul>
   </nav>
 
-  <header style="background-image: url(/assets/{{ page.background }})"></header>
+  <header style="background-image: url({{ site.baseurl }}/assets/{{ page.background }})"></header>
 
   <section id="content">{{ content }}</section>
 </body>
