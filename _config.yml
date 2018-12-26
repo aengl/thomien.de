@@ -17,3 +17,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - package.json
+  - LICENSE
+  - README.md
