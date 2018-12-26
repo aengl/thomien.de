@@ -1,6 +1,6 @@
 ---
 title: Impressum
-layout: home
+layout: default
 permalink: /impressum
 background: soa.jpg
 position: 3

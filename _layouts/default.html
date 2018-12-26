@@ -27,6 +27,19 @@
       {% endfor %}
     </ul>
   </nav>
+  <script>
+    const nav = document.getElementById('navigation');
+    window.onscroll = () => {
+      const offset = window.pageYOffset;
+      const hasOverlay = nav.classList.contains('overlay');
+      const threshold = window.innerHeight - 100;
+      if (offset > threshold && !hasOverlay) {
+        nav.classList.add('overlay');
+      } else if (offset <= threshold && hasOverlay) {
+        nav.classList.remove('overlay');
+      }
+    };
+  </script>
 
   <header style="background-image: url({{ site.baseurl }}/assets/{{ page.background }})"></header>
 

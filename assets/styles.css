@@ -32,7 +32,12 @@ nav {
   position: fixed;
   width: 100%;
   text-align: right;
-  padding: 1em 2em 5em;
+  padding: 1em 2em;
+}
+nav.overlay {
+  background-color: black;
+}
+nav:not(.overlay) {
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.8) 0%,
     rgba(0, 0, 0, 0.7) 25%,
