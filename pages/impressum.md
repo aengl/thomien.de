@@ -18,7 +18,8 @@ Im Stadtfeld 2<br />
 
 Telefon: +49 171 1455251
 
-E-Mail: <a href='mailto&#58;re&#113;u%6&#53;st%40eng&#37;6C&#45;ser&#118;er&#46;&#37;&#54;4e'>r&#101;q&#117;es&#116;&#64;&#101;n&#103;l-&#115;erver&#46;&#100;e</a>
+{% capture email %}{{ 'request@engl-server.de' | encode_email }}{% endcapture %}
+E-Mail: [engl-server.de](mailto:{{ email }})
 
 ### Haftung für Inhalte
 
