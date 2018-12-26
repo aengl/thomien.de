@@ -2,12 +2,6 @@ title: ThoMiEn
 baseurl: '/thomien.de'
 url: 'https://aengl.github.io'
 
-galleries:
-  - title: Hochzeit
-    permalink: /juicebox/hochzeit
-    description: Hochzeit von Thomas und Roxana in Tittmoning, 2018
-    thumbnail: hochzeit.jpg
-
 markdown: kramdown
 plugins:
   - jekyll-feed

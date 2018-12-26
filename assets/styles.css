@@ -71,7 +71,9 @@ header {
 #gallery-list {
   list-style: none;
   padding: 0;
-  margin: 2em;
+}
+#gallery-list li {
+  margin: 3em 2em;
 }
 #gallery-list img {
   width: 100px;
