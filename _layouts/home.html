@@ -15,7 +15,7 @@
       {% for p in pages %}
         {% if p.title %}
         <li>
-          <a href="{{ p.permalink }}">{{ p.title }}</a>
+          <a href="{{ site.baseurl }}/{{ p.permalink }}">{{ p.title }}</a>
         </li>
         {% endif %}
       {% endfor %}

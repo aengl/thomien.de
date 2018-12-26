@@ -5,10 +5,10 @@ layout: home
 <ul id="gallery-list">
   {% for gallery in site.galleries %}
   <li>
-      <a href="{{ gallery.href }}">
+      <a href="{{ gallery.permalink }}">
         <img src="{{ site.baseurl }}/assets/thumbnails/{{ gallery.thumbnail }}">
       </a>
-    <a class="title" href="{{ gallery.href }}">{{ gallery.title }}</a>
+    <a class="title" href="{{ gallery.permalink }}">{{ gallery.title }}</a>
     <p>{{ gallery.description }}</p>
   </li>
   {% endfor %}
