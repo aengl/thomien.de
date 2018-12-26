@@ -10,7 +10,9 @@ position: 3
 
 ## Angaben gemäß § 5 TMG
 
-Thomas Michael Engl Im Stadtfeld 2 84529 Tittmoning
+Thomas Michael Engl<br />
+Im Stadtfeld 2<br />
+84529 Tittmoning
 
 ## Kontakt
 
