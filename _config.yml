@@ -1,0 +1,18 @@
+title: ThoMiEn
+baseurl: ''
+url: ''
+
+galleries:
+  - title: Hochzeit
+    permalink: /juicebox/hochzeit
+    description: Hochzeit von Thomas und Roxana in Tittmoning, 2018
+    thumbnail: hochzeit.jpg
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
+exclude:
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - package.json

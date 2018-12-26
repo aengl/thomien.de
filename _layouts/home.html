@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>{{ site.title }}</title>
+  <link href="/assets/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav id="navigation">
+    <ul>
+      {% assign pages = site.pages | sort: "position" %}
+      {% for p in pages %}
+        {% if p.title %}
+        <li>
+          <a href="{{ p.permalink }}">{{ p.title }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <header style="background-image: url(/assets/{{ page.background }})"></header>
+
+  <section id="content">{{ content }}</section>
+</body>
+
+</html>
