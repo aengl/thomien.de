@@ -14,9 +14,15 @@
       {% assign pages = site.pages | sort: "position" %}
       {% for p in pages %}
         {% if p.title %}
-        <li>
-          <a href="{{ site.baseurl }}{{ p.permalink }}">{{ p.title }}</a>
-        </li>
+          {% if page.url == p.permalink %}
+          <li class="item-selected">
+            {{ p.title }}
+          </li>
+          {% else %}
+          <li>
+            <a class="item" href="{{ site.baseurl }}{{ p.permalink }}">{{ p.title }}</a>
+          </li>
+          {% endif %}
         {% endif %}
       {% endfor %}
     </ul>

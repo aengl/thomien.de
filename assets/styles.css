@@ -36,10 +36,15 @@ nav {
     rgba(0, 0, 0, 0) 100%
   );
 }
-nav a {
+nav .item,
+nav .item-selected {
   color: white;
   font-size: 1.2em;
   font-weight: 200;
+}
+nav .item-selected {
+  border-bottom: 2px solid white;
+  pointer-events: none;
 }
 nav ul {
   list-style: none;
