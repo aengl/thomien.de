@@ -18,6 +18,11 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-family: Merienda;
+  font-size: 1.8em;
+}
+
 /* ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^
  * Navigation
  * ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^ */
@@ -69,6 +74,7 @@ header {
 #content {
   max-width: 800px;
   align-self: center;
+  margin: 2em;
 }
 #gallery-list a {
   display: block;
