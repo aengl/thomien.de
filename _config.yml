@@ -11,6 +11,7 @@ galleries:
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-minifier
 exclude:
   - node_modules
   - Gemfile
