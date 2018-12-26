@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:200,400|Merienda');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400|Merienda');
 
 * {
   box-sizing: border-box;
@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  font-family: Raleway;
+  font-family: Roboto;
   font-size: 16px;
 }
 
@@ -42,7 +42,7 @@ nav .item,
 nav .item-selected {
   color: white;
   font-size: 1.2em;
-  font-weight: 200;
+  font-weight: 300;
 }
 nav .item-selected {
   border-bottom: 2px solid white;
