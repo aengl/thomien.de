@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400|Merienda');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400|Merienda');
 
 * {
   box-sizing: border-box;
@@ -16,9 +16,6 @@ body {
 a {
   color: black;
   text-decoration: none;
-}
-a:hover {
-  color: darkorange;
 }
 
 /* ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^
@@ -73,6 +70,15 @@ header {
   max-width: 800px;
   align-self: center;
 }
+#gallery-list a {
+  display: block;
+}
+#gallery-list a:hover {
+  color: black;
+}
+#gallery-list a:hover img {
+  transform: scale(1.1);
+}
 #gallery-list {
   list-style: none;
   padding: 0;
@@ -86,9 +92,18 @@ header {
   float: left;
   margin: 0 2em 1em 0;
   border-radius: 8px;
+  transition: all 0.4s ease;
 }
 #gallery-list .title {
   font-family: Merienda;
   font-size: 2em;
   line-height: 1.2;
+}
+
+/* ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^
+ * Overrides
+ * ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^ */
+
+a:hover {
+  color: darkorange;
 }
