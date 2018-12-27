@@ -4,8 +4,6 @@ url: 'https://aengl.github.io'
 
 markdown: kramdown
 plugins:
-  - jekyll-email-protect
-  - jekyll-feed
   - jekyll-minifier
 exclude:
   - node_modules
