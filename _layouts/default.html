@@ -28,11 +28,11 @@
     </ul>
   </nav>
   <script>
-    const nav = document.getElementById('navigation');
-    window.onscroll = () => {
-      const offset = window.pageYOffset;
-      const hasOverlay = nav.classList.contains('overlay');
-      const threshold = window.innerHeight - 100;
+    var nav = document.getElementById('navigation');
+    window.onscroll = function() {
+      var offset = window.pageYOffset;
+      var hasOverlay = nav.classList.contains('overlay');
+      var threshold = window.innerHeight - 100;
       if (offset > threshold && !hasOverlay) {
         nav.classList.add('overlay');
       } else if (offset <= threshold && hasOverlay) {
