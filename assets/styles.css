@@ -24,6 +24,15 @@ h1 {
   font-size: 1.8em;
 }
 
+input,
+label {
+  font-family: Roboto;
+}
+label {
+  vertical-align: middle;
+  margin-right: 1em;
+}
+
 /* ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^
  * Navigation
  * ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^ */
@@ -110,6 +119,13 @@ header {
   font-family: Merienda;
   font-size: 2em;
   line-height: 1.2;
+}
+#password-error:not(.visible) {
+  visibility: hidden;
+}
+#password-error {
+  color: rgb(202, 2, 2);
+  margin: 1em 0;
 }
 
 /* ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^

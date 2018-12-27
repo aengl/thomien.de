@@ -2,14 +2,51 @@
 layout: default
 ---
 
-<ul id="gallery-list">
-  {% for gallery in site.data.galleries %}
-  <a href="{{ gallery.permalink }}" target="_blank">
-    <li>
-      <img src="{{ site.baseurl }}/assets/thumbnails/{{ gallery.thumbnail }}">
-      <div class="title">{{ gallery.title }}</div>
-      <p>{{ gallery.description }}</p>
-    </li>
-  </a>
-  {% endfor %}
-</ul>
+<form id="password-form">
+  <label for="password">Passwort:</label>
+  <input id="password" type="password" name="password" required>
+  <input type="submit" value="Submit">
+  <div id="password-error">Passwort ist falsch!</div>
+</form>
+
+<script>
+  var content = document.getElementById('content');
+  var passwordForm = document.getElementById('password-form');
+  var passwordInput = document.getElementById('password');
+  var passwordError = document.getElementById('password-error');
+
+  function request(password) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4) {
+        if (this.status == 200) {
+          content.innerHTML = this.responseText;
+        } else {
+          passwordError.classList.add('visible');
+        }
+      }
+    };
+    xhttp.open('GET', password + '.html', true);
+    xhttp.send();
+  }
+
+  // Get password from local storage
+  var storedPassword = localStorage.getItem('password');
+  if (storedPassword) {
+    request(storedPassword);
+  }
+
+  // Reset error on input
+  passwordInput.oninput = function () {
+    passwordInput.setCustomValidity('');
+    passwordError.classList.remove('visible');
+  }
+
+  // Submit password
+  passwordForm.onsubmit = function (e) {
+    e.preventDefault();
+    var password = passwordInput.value;
+    localStorage.setItem('password', password);
+    request(password);
+  };
+</script>
