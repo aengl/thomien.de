@@ -51,7 +51,7 @@ nav .item-selected {
   font-weight: 300;
 }
 nav .item-selected {
-  border-bottom: 2px solid white;
+  font-weight: 400;
   pointer-events: none;
 }
 nav ul {
