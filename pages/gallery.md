@@ -1,7 +1,7 @@
 ---
 title: Gallerie
 layout: gallery
-permalink: /gallery
-background: titan.jpg
+permalink: /gallery.html
+background: gallery.jpg
 position: 2
 ---

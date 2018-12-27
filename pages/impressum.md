@@ -1,8 +1,8 @@
 ---
 title: Impressum
 layout: default
-permalink: /impressum
-background: soa.jpg
+permalink: /impressum.html
+background: impressum.jpg
 position: 3
 ---
 

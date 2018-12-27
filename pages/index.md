@@ -2,6 +2,6 @@
 title: Startseite
 layout: default
 permalink: /
-background: megumin.jpg
+background: home.jpg
 position: 1
 ---
