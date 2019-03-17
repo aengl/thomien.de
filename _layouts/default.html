@@ -16,12 +16,12 @@
       {% for p in pages %}
         {% if p.title %}
           {% if page.url == p.permalink %}
-          <li class="item-selected">
+          <li class="item item-selected">
             {{ p.title }}
           </li>
           {% else %}
-          <li>
-            <a class="item" href="{{ site.baseurl }}{{ p.permalink }}">{{ p.title }}</a>
+          <li class="item">
+            <a href="{{ site.baseurl }}{{ p.permalink }}">{{ p.title }}</a>
           </li>
           {% endif %}
         {% endif %}
