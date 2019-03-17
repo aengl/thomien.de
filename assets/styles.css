@@ -86,7 +86,7 @@ header {
  * Content
  * ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^ */
 
-#content {
+main {
   max-width: 800px;
   align-self: center;
   margin: 2em;
@@ -120,10 +120,43 @@ header {
   font-size: 2em;
   line-height: 1.2;
 }
-#password-error:not(.visible) {
+#password-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#password-form img {
+  display: block;
+  width: 3em;
+  height: 3em;
+  align-self: center;
+}
+#password-form #password {
+  margin: 1em;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 0.2em 0.5em;
+  text-align: center;
+}
+#password-form:not(.error) #password:focus {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+}
+#password-form.error #password {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(233, 102, 102, 0.6);
+}
+#password-form:not(.error) #password-error {
   visibility: hidden;
 }
-#password-error {
+#password-form input[type='submit'] {
+  width: 10em;
+  align-self: center;
+  font-size: 1em;
+  padding: 0.2em 0.5em;
+}
+#password-form #password-error {
   color: rgb(202, 2, 2);
   margin: 1em 0;
 }
